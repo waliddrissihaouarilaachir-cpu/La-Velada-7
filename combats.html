@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Velada del Año - Combats</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Estils integrats per garantir la disposició horitzontal i la mida dels avatares */
+    .matchup {
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: space-around !important;
+      margin: 20px 0 !important;
+      width: 100% !important;
+    }
+
+    .fighter-box {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      width: 40% !important;
+    }
+
+    .fighter-avatar {
+      width: 80px !important;
+      height: 80px !important;
+      max-width: 80px !important;
+      max-height: 80px !important;
+      border-radius: 50% !important;
+      object-fit: cover !important;
+      border: 3px solid #E63946 !important;
+      display: block !important;
+      margin: 0 auto !important;
+    }
+
+    .fighter-box h3 {
+      font-size: 0.95rem !important;
+      text-align: center !important;
+      color: #FFFFFF !important;
+      margin-top: 8px !important;
+      white-space: nowrap !important;
+    }
+
+    .vs {
+      font-weight: bold !important;
+      font-size: 1.2rem !important;
+      color: #E63946 !important;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50 5 L85 20 L85 60 L50 95 L15 60 L15 20 Z" stroke="#E63946" stroke-width="6" fill="#1C1C24"/>
+        <path d="M30 40 L45 70 L55 70 L40 40 Z" fill="#2A6F97"/>
+        <path d="M70 40 L55 70 L45 70 L60 40 Z" fill="#E63946"/>
+        <circle cx="38" cy="42" r="8" fill="#2A6F97"/>
+        <circle cx="62" cy="42" r="8" fill="#E63946"/>
+      </svg>
+      <span class="logo-text">LA VELADA VII</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="combats.html" class="active">Combats</a></li>
+        <li><a href="entrades.html">Entrades</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="combats-container">
+      <h2>CARTELERA DE COMBATS</h2>
+      <p class="subtitle">Descobreix els enfrontaments d'aquesta edició</p>
+
+      <div class="combats-grid">
+        <!-- Combat 1 -->
+        <article class="combat-card">
+          <span class="combat-num">COMBAT 1</span>
+          <div class="matchup">
+            <div class="fighter-box">
+              <img src="https://www.hola.com/horizon/landscape/6b00f9b4139e-ibai.jpg" alt="Ibai Llanos" class="fighter-avatar">
+              <h3>Ibai Llanos</h3>
+            </div>
+            <span class="vs">VS</span>
+            <div class="fighter-box">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/El_Rubius_en_el_Festival_de_cinema_de_Sitges_2018_%28recorte%29.jpg" alt="ElRubius" class="fighter-avatar">
+              <h3>ElRubius</h3>
+            </div>
+          </div>
+          <p class="combat-time">18:30 h</p>
+        </article>
+
+        <!-- Combat 2 -->
+        <article class="combat-card">
+          <span class="combat-num">COMBAT 2</span>
+          <div class="matchup">
+            <div class="fighter-box">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/TheGrefg_en_el_torneo_de_p%C3%A1del_de_Ibai_%282021%29.png" alt="TheGrefg" class="fighter-avatar">
+              <h3>TheGrefg</h3>
+            </div>
+            <span class="vs">VS</span>
+            <div class="fighter-box">
+              <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/e7457017-ea00-45a4-a88a-9f6615daebe9-profile_image-70x70.png" alt="DjMaRiiO" class="fighter-avatar">
+              <h3>DjMaRiiO</h3>
+            </div>
+          </div>
+          <p class="combat-time">19:30 h</p>
+        </article>
+
+        <!-- Combat 3 -->
+        <article class="combat-card">
+          <span class="combat-num">COMBAT 3</span>
+          <div class="matchup">
+            <div class="fighter-box">
+              <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/74586414-e27b-4347-89c5-109e42ac3e1d-profile_image-300x300.png" alt="Juan Guarnizo" class="fighter-avatar">
+              <h3>Juan Guarnizo</h3>
+            </div>
+            <span class="vs">VS</span>
+            <div class="fighter-box">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Spreen_2024.jpg" alt="Spreen" class="fighter-avatar">
+              <h3>Spreen</h3>
+            </div>
+          </div>
+          <p class="combat-time">20:30 h</p>
+        </article>
+
+        <!-- Combat Principal -->
+        <article class="combat-card main-combat">
+          <span class="combat-num">COMBAT PRINCIPAL</span>
+          <div class="matchup">
+            <div class="fighter-box">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/AuronPlay_%282014%29.jpg" alt="Auronplay" class="fighter-avatar">
+              <h3>Auronplay</h3>
+            </div>
+            <span class="vs">VS</span>
+            <div class="fighter-box">
+              <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/198c0fe9-cf41-4ef1-ad55-405c1e599f25-profile_image-70x70.png" alt="ElXokas" class="fighter-avatar">
+              <h3>ElXokas</h3>
+            </div>
+          </div>
+          <p class="combat-time">22:00 h</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026  WDHL Solutions. Projecte de Walid fictici.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
